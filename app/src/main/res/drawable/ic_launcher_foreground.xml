@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Group scaled to fit nicely within adaptive icon safe zone -->
+    <group
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:translateX="13.5"
+        android:translateY="13.5">
+        <!-- Journal body -->
+        <path
+            android:fillColor="@color/icon_white"
+            android:pathData="M24,16 h44 a6,6 0 0 1 6,6 v64 a6,6 0 0 1 -6,6 H24 a6,6 0 0 1 -6,-6 V22 a6,6 0 0 1 6,-6 z"/>
+        <!-- Journal spine band -->
+        <path
+            android:fillColor="@color/icon_white"
+            android:pathData="M24,16 h8 v76 h-8 z"/>
+        <!-- Lock shackle -->
+        <path
+            android:fillColor="@color/icon_white"
+            android:pathData="M68,44
+                              a8,8 0 0 0 -16,0 v6 h4 v-6
+                              a4,4 0 0 1 8,0 v6 h4 z"/>
+        <!-- Lock body -->
+        <path
+            android:fillColor="@color/icon_white"
+            android:pathData="M52,50 h16 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 H52 a4,4 0 0 1 -4,-4 V54 a4,4 0 0 1 4,-4 z"/>
+    </group>
+</vector>
