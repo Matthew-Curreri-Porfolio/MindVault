@@ -1,4 +1,40 @@
+# Gradle
+.gradle/
+build/
+app/build/
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+gradle/.gradle
+
+# IDE
+.idea/
+*.iml
+
+# Android
+/local.properties
+
+# Build outputs
+/app/build/
+
+# Large binaries
 *.bin
 *.gguf
-/net-commander
+
+# Assets
 /assets
+
+# Net commander
+/net-commander
+
+# Android build artifacts
+*.hprof
+*.apk
+*.ap_
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+*.so
+*.dll
+*.exe
