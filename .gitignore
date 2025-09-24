@@ -1,58 +1,79 @@
-# Gradle
-.gradle/
-build/
-app/build/
-gradle/wrapper/gradle-wrapper.jar
-gradle/wrapper/gradle-wrapper.properties
-gradle/.gradle
-
-# IDE
-.idea/
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
 *.iml
 
-# Android
+# Gradle / Android project
+.gradle/
+gradle/.gradle/
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
 /local.properties
+/.idea/
+build/
+app/build/
+app/release/
+app/debug/
+captures/
+.externalNativeBuild/
+.cxx/
+obj/
+out/
 
-# Build outputs
-/app/build/
+# Keystores (never commit)
+*.jks
+*.keystore
+*.pem
+*.p12
+*.der
 
-# Large binaries
-*.bin
-*.gguf
-
-# Assets
-/assets
-
-# Net commander
-/net-commander
-
-# Android build artifacts
+# Android artifacts
 *.hprof
 *.apk
 *.ap_
 *.dex
 *.class
 *.jar
+*.aar
 *.war
 *.ear
 *.so
 *.dll
 *.exe
 
-# Checkpoints / models
+# ML / model weights & checkpoints
+models/
+weights/
+datasets/
+data/
+assets/
+*.bin
+*.gguf
+*.ggml
+*.ggmf
 *.ckpt
 *.safetensors
 *.pt
+*.pth
 *.onnx
-
-# Archives
-*.zip
+*.npz
+*.npy
+*.h5
+*.pb
+*.tflite
+tokenizer.model
+sentencepiece.*
 *.tar
 *.tar.gz
 *.tgz
+*.zip
 *.7z
 
-# NDK / build cache
-.cxx/
-obj/
-out/
+# Python env & caches (if present)
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
