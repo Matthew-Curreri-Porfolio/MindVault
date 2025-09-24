@@ -1,53 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
 
-    <include layout="@layout/toolbar"/>
+    <include layout="@layout/toolbar" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:background="?attr/colorSurface">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="?attr/colorSurface">
 
             <Button
                 android:id="@+id/btnInit"
+                style="?attr/materialButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Load Models"
-                style="?attr/materialButtonStyle"/>
+                android:text="Load Models" />
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:hint="Transcript here..."
+                android:layout_height="240dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
                 android:gravity="top|start"
-                android:background="@android:drawable/edit_text"
-                android:padding="8dp"
-                android:layout_marginTop="12dp"/>
+                android:hint="Transcript here..."
+                android:padding="12dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurfaceVariant" />
 
             <Button
                 android:id="@+id/btnSummarize"
+                style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Record → Transcribe → Summarize"
                 android:layout_marginTop="12dp"
-                style="?attr/materialButtonOutlinedStyle"/>
+                android:text="Record → Transcribe → Summarize" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="12dp"
+                android:orientation="horizontal"
                 android:weightSum="3">
 
                 <Button
@@ -55,21 +60,21 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Login"/>
+                    android:text="Login" />
 
                 <Button
                     android:id="@+id/btnBackup"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Backup now"/>
+                    android:text="Backup now" />
 
                 <Button
                     android:id="@+id/btnRestore"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Restore"/>
+                    android:text="Restore" />
             </LinearLayout>
 
             <ProgressBar
@@ -79,7 +84,7 @@
                 android:layout_height="8dp"
                 android:layout_marginTop="12dp"
                 android:indeterminate="true"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/tvResult"
@@ -87,7 +92,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Status..."
-                android:textAppearance="?attr/textAppearanceBodyMedium"/>
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="?attr/colorOnSurface" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -38,3 +38,21 @@ gradle/.gradle
 *.so
 *.dll
 *.exe
+
+# Checkpoints / models
+*.ckpt
+*.safetensors
+*.pt
+*.onnx
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# NDK / build cache
+.cxx/
+obj/
+out/

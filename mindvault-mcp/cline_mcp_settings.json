@@ -1,0 +1,1 @@
+{"servers": {"filesystem": {"command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem@2025.8.21", "/tmp/test-mcp"]}, "browser-tools-mcp": {"command": "npx", "args": ["-y", "@agentdeskai/browser-tools-mcp@latest"]}, "git": {"command": "uvx", "args": ["mcp-server-git"]}}}

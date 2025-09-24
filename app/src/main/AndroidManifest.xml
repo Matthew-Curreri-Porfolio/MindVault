@@ -10,7 +10,7 @@
         android:allowBackup="true"
         android:label="MindVault"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        android:theme="@style/Theme.MindVault">
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -19,5 +19,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.SettingsActivity"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
     </application>
 </manifest>

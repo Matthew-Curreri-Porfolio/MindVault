@@ -3,13 +3,16 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
 
     <EditText
         android:id="@+id/editServer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Server URL (http://...)" />
+        android:hint="Server URL (http://...)"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurfaceVariant" />
 
     <EditText
         android:id="@+id/editEmail"
@@ -17,6 +20,8 @@
         android:layout_height="wrap_content"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
         android:layout_marginTop="8dp"/>
 
     <EditText
@@ -25,6 +30,8 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
         android:layout_marginTop="8dp"/>
 
     <Button
